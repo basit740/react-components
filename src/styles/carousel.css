@@ -1,0 +1,122 @@
+body {
+	font-family: 'roboto', arial;
+}
+img {
+	height: 200px;
+	width: 200px;
+	background-position: cover;
+	transform: scale(1.3);
+	animation-name: img-animation;
+	animation-duration: 0.5s;
+	animation-delay: 0.2s;
+}
+
+@keyframes img-animation {
+	0% {
+		transform: scale(0);
+	}
+	25% {
+		transform: scale(1.1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	75% {
+		transform: scale(1.3);
+	}
+	100% {
+		transform: scale(1.3);
+	}
+}
+
+.carousel {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 48px;
+	width: 800px;
+	margin: 250px auto;
+	height: 224px;
+	background-color: rgb(114, 185, 114);
+	padding-left: 80px;
+}
+.carousel p {
+	animation-name: text-animation;
+	animation-duration: 1s;
+	animation-delay: 0.2s;
+}
+.testimonial-body {
+	color: white;
+}
+@keyframes text-animation {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 25%;
+	}
+	50% {
+		opacity: 50%;
+	}
+	75% {
+		opacity: 75%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+.testimonial-info {
+	margin-top: 50px;
+	color: green;
+}
+.testimonial-info p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button svg {
+	stroke: black;
+}
+.btn-left {
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+.btn-right {
+	right: 0;
+	transform: translate(50%, -50%);
+}
+.dots {
+	position: absolute;
+	display: flex;
+	gap: 8px;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 100%);
+}
+.dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid green;
+	cursor: pointer;
+}
+
+.dot--fill {
+	background-color: green;
+}
